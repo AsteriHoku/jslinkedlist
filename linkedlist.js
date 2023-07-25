@@ -1,4 +1,3 @@
-console.time('ba');
 
 class BigArray {
 	head = null;
@@ -93,6 +92,8 @@ class BANode {
 	}
 }
 
+console.time('ba');
+
 let arr = new BigArray();
 
 arr.push('foo');
@@ -119,10 +120,7 @@ arr.print();
 console.log('\u001b[35m\u221e\u001b[34m\u221e\u001b[32m\u221e\u001b[33m\u221e\u001b[31m\u221e\u001b[0m');
 console.dir(arr);
 console.log('\u001b[35m\u221e\u001b[34m\u221e\u001b[32m\u221e\u001b[33m\u221e\u001b[31m\u221e\u001b[0m');
-// console.log('\e[1;95m\u221e\e[1;94m\u221e\e[1;92m\u221e\e[1;93m\u221e\e[1;91m\u221e');
-// console.log('\e[1;32m\u221e');
-// console.log(arr.head.data);
-// console.log(`\x1B[=3h${arr.head.data}`);
+
 console.log('\u001b[31m');
 console.timeEnd('ba');
 console.log('\u001b[0m');
